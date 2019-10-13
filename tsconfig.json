@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "compilerOptions": {        
         "target": "es2019",
@@ -20,4 +21,28 @@
     "include": [
         "/**/*", "index.ts"
     ]
+=======
+{
+    "compilerOptions": {        
+        "target": "es2019",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "sourceMap": false,
+        "strict": true,
+        "noImplicitAny": true,
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ]
+        },
+        "outDir": "dist",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    },
+    "include": [
+        "/**/*", "index.ts"
+    ]
+>>>>>>> master
 }
