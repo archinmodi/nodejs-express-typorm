@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [12.x]
     
     steps:
     - uses: actions/checkout@v1   
@@ -23,6 +23,6 @@ jobs:
         version: ${{ matrix.node_version }}
     - name: npm install, build
       run: |
-        npm run install
+        npm install
         npm run start:prod
         npm run etst
