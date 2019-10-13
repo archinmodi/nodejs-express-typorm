@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "nodejs-api",
   "version": "1.0.0",
@@ -61,3 +62,68 @@
     "tslint": "^5.17.0"
   }
 }
+=======
+{
+  "name": "nodejs-api",
+  "version": "1.0.0",
+  "description": "Simple API Gateway using Express JS and typeorm",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e ts -w ./ -x npm run start-server",
+    "start-server": "tsc && npm run copy-static-assets && node -r dotenv/config dist/index.js",
+    "copy-static-assets": "ts-node copyStaticAssets.ts",
+    "etst": "echo \"Thank you for using github action!\" && exit 1",
+    "install:clean": "rm -r package-lock.json && rm -r node_modules && npm i",
+    "start:prod": "tsc && npm run copy-static-assets && node -r dotenv/config dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/archinmodi/api-gateway"
+  },
+  "keywords": [
+    "microservices"
+  ],
+  "author": "Archin Modi",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/body-parser": "^1.17.0",
+    "@types/cors": "^2.8.6",
+    "@types/ejs": "^2.6.3",
+    "@types/helmet": "0.0.44",
+    "@types/jsonwebtoken": "^8.3.2",
+    "@types/morgan": "^1.7.37",
+    "@types/node": "^12.7.12",
+    "@types/pg": "^7.4.14",
+    "@types/shelljs": "^0.8.5",
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.6",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chalk": "^2.4.2",
+    "class-validator": "^0.9.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.0.1",
+    "helmet": "^3.18.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.6.0",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
+    "pg": "^7.11.0",
+    "reflect-metadata": "^0.1.13",
+    "shelljs": "^0.8.3",
+    "swagger-jsdoc": "^3.4.0",
+    "swagger-ui-express": "^4.1.2",
+    "typeorm": "^0.2.19"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "nodemon": "^1.19.1",
+    "tslint": "^5.17.0"
+  }
+}
+>>>>>>> master

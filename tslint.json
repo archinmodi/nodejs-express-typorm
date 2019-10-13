@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "defaultServerity": "error",
     "extends": [
@@ -8,4 +9,16 @@
         "trailing-comma": [false]
     },
     "rulesDirectory": []
+=======
+{
+    "defaultServerity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "trailing-comma": [false]
+    },
+    "rulesDirectory": []
+>>>>>>> master
 }
