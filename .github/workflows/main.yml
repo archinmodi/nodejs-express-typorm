@@ -19,6 +19,6 @@ jobs:
         version: ${{ matrix.node_version }}
     - name: npm install, build
       run: |
-        npm run install:clean
+        npm run install
         npm run start:prod
         npm run etst
